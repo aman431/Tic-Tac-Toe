@@ -65,11 +65,6 @@ body
 	height: 200px;
 	width: 200px;
 }
-.game-cell:hover
-{
-	border: 3px solid white;
-	transition: all 0.1 ease-in;
-}
 .x::after {
 	content: '✕';
 	font-size : 200px;
