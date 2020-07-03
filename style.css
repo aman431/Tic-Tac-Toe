@@ -3,18 +3,30 @@
 	margin: 0px;
 	padding: 0px;
 }
-
 body
 {
 	display: flex;
 	color: #545454;
 	font-size: sans-serif;
 	justify-content: center;
+	background: black;
+}
+.heading
+{
+	position: relative;
+	display: flex;
+	left : 420px;
+	color: white;
+	font-size: 50px;
+	justify-content: center;
+	font-style: sans-serif;
 }
 .cointainer
 {
-	background: #14BDAC;
-	margin: 50px;
+	position:relative;
+	background: #FF6F61;
+	right: 350px;
+	margin: 100px;
 	padding: 50px;
 	border-radius: 25px;
 }
@@ -26,7 +38,6 @@ body
 {
 	color : white;
 }
-
 .status span
 {
 	color: white;
@@ -59,24 +70,50 @@ body
 {
 	display: flex;
 	justify-content: center;
+	transition: 1s;
 	align-items : center;
-	background: #14BDAC;
+	background: #FF6F61;
 	cursor: pointer;
 	height: 200px;
 	width: 200px;
 }
+.game-cell:hover
+{
+	transition: 1s;
+	background: solid white;
+	filter: grayscale(50%);
+	transform: scale(1.1);
+}
 .x::after {
 	content: '✕';
-	font-size : 200px;
+	font-size : 100px;
 }
 .o::after {
 	content: '○';
 	color: white;
-	font-size: 200px;
+	font-size: 100px;
 }
 .won::after
 {
 	color: red;
+}
+.button
+{
+	font-size: 25px;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+	color: black;
+	cursor: pointer;
+	transition: 1s;
+	margin-right: 200px;
+	padding: 30px;
+	text-transform: uppercase;
+}
+.button:hover
+{
+	background: #00FA9A;
+	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -85,6 +122,11 @@ body
     grid-gap: 10px;
   }
 
+  .heading
+  {
+	  height:150px;
+	  width: 250px;
+  }
   .game-cell {
     height: 150px;
     width: 150px;
@@ -105,6 +147,11 @@ body
     padding: 25px;
   }
 
+  .heading
+  {
+	  height: 100px;
+	  width: 250px;
+  }
   .game-cell {
     height: 100px;
     width: 100px;

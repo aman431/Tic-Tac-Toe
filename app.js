@@ -1,6 +1,7 @@
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
 const cellDivs = document.querySelectorAll('.game-cell');
+const winnerStatus = document.querySelector('.button');
 
 // game constants
 const xSymbol = '×';
@@ -10,7 +11,9 @@ const oSymbol = '○';
 let gameIsLive = true;
 let xIsNext = true;
 let winner = null;
-
+let xtimes = 0;
+let otimes = 0;
+let tie = 0;
 
 const letterToSymbol = (letter) => letter === 'x'? xSymbol : oSymbol;
 
@@ -22,11 +25,16 @@ const handleWin = (letter) =>
 	if(winner === 'x')
 	{
 		statusDiv.innerHTML = `${letterToSymbol(winner)} has won !!`;
+		 xtimes++;
+		console.log(xtimes);
 	}
 	else
 	{
 		statusDiv.innerHTML = `<span>${letterToSymbol(winner)} has won !! </span>`;
+		otimes++;
+		console.log(otimes);
 	}
+	//winnerStatus.addEventListener('click',handleWinnerStatus);
 };
 
 const checkGameStatus = () => {
@@ -100,6 +108,8 @@ const checkGameStatus = () => {
 	{
   	 	 gameIsLive = false;
     		statusDiv.innerHTML = 'Game is tied!';
+		tie++;
+		console.log(tie);
   	} 
 	else
 	{
@@ -139,14 +149,31 @@ const handleCellClick = (e) => {
     classList.add('x'); 
    // xIsNext = !xIsNext;
     checkGameStatus();
-  } else 
-    {
+  }
+  else 
+  {
     classList.add('o');
    // xIsNext = !xIsNext;
     checkGameStatus();
-    }
+  }
  };
 
+handleWinnerStatus = () =>
+{
+	if(winner == 'x')
+	{
+		winnerStatus.innerHTML = `${letterToSymbol(winner)} -  ${xtimes} || 0 - ${otimes} || Tie ${tie}`;
+	}
+	else if(winner == 'o')
+	{
+		winnerStatus.innerHTML = ` x - ${xtimes} || ${letterToSymbol(winner)} - ${otimes} || Tie ${tie}`;
+	}
+	else
+	{
+		console.log(tie);
+		winnerStatus.innerHTML = `${letterToSymbol(winner)} -  ${xtimes} || 0 - ${otimes} || Tie ${tie} `
+	}
+};
 
 // event listeners
 resetDiv.addEventListener('click', handleReset);
@@ -154,3 +181,5 @@ resetDiv.addEventListener('click', handleReset);
 for (const cellDiv of cellDivs) {
   cellDiv.addEventListener('click', handleCellClick)
 }
+
+winnerStatus.addEventListener('click',handleWinnerStatus);
