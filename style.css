@@ -122,11 +122,6 @@ body
     grid-gap: 10px;
   }
 
-  //.heading
-  {
-	  height:150px;
-	  width: 250px;
-  }
   .game-cell {
     height: 150px;
     width: 150px;
@@ -147,11 +142,6 @@ body
     padding: 25px;
   }
 
- // .heading
-  {
-	  height: 100px;
-	  width: 250px;
-  }
   .game-cell {
     height: 100px;
     width: 100px;
