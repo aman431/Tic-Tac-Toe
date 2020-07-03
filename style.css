@@ -25,7 +25,7 @@ body
 {
 	position:relative;
 	background: #FF6F61;
-	right: 350px;
+	right: 50px;
 	margin: 100px;
 	padding: 50px;
 	border-radius: 25px;
@@ -117,8 +117,10 @@ body
 }
 
 @media only screen and (max-width: 1024px) {
+
   .game-grid {
     margin-top: 25px;
+    margin-left: 125px;
     grid-gap: 10px;
   }
 
