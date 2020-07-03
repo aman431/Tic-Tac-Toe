@@ -122,7 +122,7 @@ body
     grid-gap: 10px;
   }
 
-  .heading
+  //.heading
   {
 	  height:150px;
 	  width: 250px;
@@ -147,7 +147,7 @@ body
     padding: 25px;
   }
 
-  .heading
+ // .heading
   {
 	  height: 100px;
 	  width: 250px;
