@@ -11,9 +11,12 @@ const oSymbol = '○';
 let gameIsLive = true;
 let xIsNext = true;
 let winner = null;
+
+//different Counter for winner
 let xtimes = 0;
 let otimes = 0;
 let tie = 0;
+
 
 const letterToSymbol = (letter) => letter === 'x'? xSymbol : oSymbol;
 
