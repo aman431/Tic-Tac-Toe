@@ -117,7 +117,6 @@ body
 	transform: scale(1.1);
 }
 @media only screen and (max-width: 700px) {
-
 .cointainer{
 	display: flex;
 	position: relative;
@@ -152,3 +151,6 @@ body
     font-size: 175px;
   }
 }
+=======
+
+>>>>>>> f59f63ce3c3d5b41fe8cef797b564d01530fcf10
