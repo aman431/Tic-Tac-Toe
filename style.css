@@ -124,14 +124,12 @@ body
 	margin: 10px;
 	height: 100px;
 }
-
   .game-grid {
     margin-top: 25px;
     margin-left: 125px;
     grid-gap: 10px;
     padding-left: 20px;
   }
-
   .game-cell {
 	  display: flex;
 	justify-content: center;
@@ -151,6 +149,3 @@ body
     font-size: 175px;
   }
 }
-=======
-
->>>>>>> f59f63ce3c3d5b41fe8cef797b564d01530fcf10
