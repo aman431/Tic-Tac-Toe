@@ -8,7 +8,6 @@ language are used to build this game are .
 2) CSS3
 3) JAVASCRIPT(DOM)
 
-If you want to play a game  Link is given.
-
-https://aman431.github.io/Tic-Tac-Toe/
+If you want to play a game  Link is given<br />
+https://aman431.github.io/Tic-Tac-Toe/<br />
 open a link in mobile in Desktop Mode
