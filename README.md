@@ -13,5 +13,5 @@ This game is a simple game Tic-Tac-Toe which can be played between two players. 
 * if you are opening a link in mobile please open in Desktop Mode.
 
 ## **SCREENSHOT**
-<img src="Images/S2.png" width="100px" height='100px'>
-
+<img src="Images/S1.png" width="400px" height='400px'>
+<img src="Images/S2.png" width="400px" height="400px">
